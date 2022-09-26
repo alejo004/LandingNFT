@@ -101,10 +101,134 @@ header {
 	cursor: pointer; 
 }
 
+.cart {
+	position: absolute;
+	top: 70px;
+	right: 0;
+	padding: 50px 30px;
+	background: linear-gradient(to bottom, var(--gris-osc), var(--blanquito-osc));
+	border-left: 1px solid var(--negrito);
+	display: none;
+	flex-direction: column;
+	gap: 30px;
+	height: calc(100vh - 70px);
+	z-index: 2;
+	overflow: auto;
+}
+
                            /* -----------------NAV----------------- */
 
-                           /*-----------------HERO----------------- */
 
+.cart h2 {
+	align-self: center;
+	color: var(--azulverde2);
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.cart-item {
+	background: var(--gris-osc);
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+
+	border-radius: 10px;
+}
+
+.cart-item img {
+	width: 65px;
+	height: 65px;
+}
+
+.item-title {
+	color: var(--negrito);
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.item-bid {
+	color: var(--negrito);
+	font-weight: 300;
+	font-size: 10px;
+}
+
+.item-price {
+	background: linear-gradient(to right, #1f4037, var(--azulsito));
+	background-clip: text;
+	color: transparent;
+	-webkit-background-clip: text;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.item-handler {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.quantity-handler {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 8px;
+	border-radius: 5px;
+	color: var(--negrito);
+	font-weight: 400;
+}
+
+.up {
+	border: 1px solid var(--marsito);
+}
+
+.down {
+	background: var(--grisesito);
+	border: 1px solid var(--azulverde);
+}
+
+.item.quantitiy {
+	color: var(--negrito);
+}
+
+.divider {
+	margin-top: 20px;
+	border: .5px solid var(--azulverde2);
+}
+
+.cart-total {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cart-total p {
+	color: var(--azulverde2);
+	font-weight: 700;
+}
+
+.cart-total span {
+	color: var(--negrito);
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.cart::-webkit-scrollbar {
+	display: none;
+}
+                           /*-----------------OCULTAR CARRITO----------------- */
+
+#cart-toggle, #menu-toggle, .menu-label {
+	display: none;
+}
+
+#cart-toggle:checked + .cart {
+	display: flex;
+}
+
+                           /*-----------------NAV----------------- */
 
 main {
 	background: var(--grisesito);
@@ -116,7 +240,7 @@ main {
 	width: 100%;
 	font-weight: 900;
 }
-
+                           /*-----------------HERO----------------- */
 #hero {
 	margin-top: 65px;
 	padding: 70px 0;
@@ -358,7 +482,6 @@ main {
 	gap: 15px;
 	justify-content: center;
 	align-items: center;
- 	height: 600px;
 }
 
 .discover-cards img {
@@ -433,9 +556,8 @@ main {
 	margin-bottom: 20px;
 }
 
-.product img {
+.product {
 	width: 330px;
-
 }
 
 .product-info {

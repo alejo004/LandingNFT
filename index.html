@@ -4,12 +4,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/mediaqueries.css">
 	<title>Nucba NFT</title>
 </head>
 <body>
 	<header>
 		<img class="logo" src="assets/logonft1.png" alt="logo :(">
 		<nav class="navbar">
+			<label for="menu-toggle" class="menu-label">
+				<img src="assets/menu1.png" class="menu-icon">
+			</label>
+			<input type="checkbox" id="menu-toggle">
 			<ul class="navbar-list">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Descubre</a></li>
@@ -17,7 +22,99 @@
 				<li><a href="#">YouTube</a></li>
 				<li><a href="#">Contactanos</a></li>
 			</ul>
-			<img class="cart-icon" src="assets/cart1.png" alt="carrito de compras">
+			 
+			<label for="cart-toggle" class="cart-label">
+				<img class="cart-icon" src="assets/cart1.png" alt="carrito de compras">
+			</label>
+			<input type="checkbox" id="cart-toggle">
+			<!--cart-->
+
+			<div class="cart">
+				<h2>Tus NFTs</h2>
+
+				<div class="cart-item">
+					<img src="assets/cola1.png" alt="imagen">
+					<div class="item-info">
+						<h3 class="item-title">Coca Cola</h3>
+						<p class="item-bid">Current Bid</p>
+						<span class="item-price">1.8 ETH</span>
+					</div>
+					<div class="item-handler">
+						<span class="quantity-handler down"> - </span>
+						<span class="item-quantity"> 1 </span>
+						<span class="quantity-handler up"> + </span>
+					</div>
+				</div>
+
+				<div class="cart-item">
+					<img src="assets/nike2.png" alt="imagen">
+					<div class="item-info">
+						<h3 class="item-title">Nike</h3>
+						<p class="item-bid">Current Bid</p>
+						<span class="item-price">6.3 ETH</span>
+					</div>
+					<div class="item-handler">
+						<span class="quantity-handler down"> - </span>
+						<span class="item-quantity"> 1 </span>
+						<span class="quantity-handler up"> + </span>
+					</div>
+				</div>
+
+				<div class="cart-item">
+					<img src="assets/vans1.png" alt="imagen">
+					<div class="item-info">
+						<h3 class="item-title">Vans</h3>
+						<p class="item-bid">Current Bid</p>
+						<span class="item-price">3.5 ETH</span>
+					</div>
+					<div class="item-handler">
+						<span class="quantity-handler down"> - </span>
+						<span class="item-quantity"> 1 </span>
+						<span class="quantity-handler up"> + </span>
+					</div>
+				</div>
+
+				<div class="cart-item">
+					<img src="assets/atari1.png" alt="imagen">
+					<div class="item-info">
+						<h3 class="item-title">Atari</h3>
+						<p class="item-bid">Current Bid</p>
+						<span class="item-price">0.9 ETH</span>
+					</div>
+					<div class="item-handler">
+						<span class="quantity-handler down"> - </span>
+						<span class="item-quantity"> 1 </span>
+						<span class="quantity-handler up"> + </span>
+					</div>
+				</div>
+
+				<div class="cart-item">
+					<img src="assets/spotify1.png" alt="imagen">
+					<div class="item-info">
+						<h3 class="item-title">Spotify</h3>
+						<p class="item-bid">Current Bid</p>
+						<span class="item-price">18.1 ETH</span>
+					</div>
+					<div class="item-handler">
+						<span class="quantity-handler down"> - </span>
+						<span class="item-quantity"> 1 </span>
+						<span class="quantity-handler up"> + </span>
+					</div>
+				</div>
+
+				<span class="divider"></span>
+				<div class="cart-total">
+					<p>Total:</p>
+					<span>30.6 ETH</span>
+				</div>
+
+				<button class="btn-add">Comprar</button>
+
+			</div>
+
+			<!--cart end-->
+
+
 		</nav>
 	</header>
 	<main>
@@ -86,9 +183,9 @@
 				</div>
 			</div>
 			<div class="discover-cards">
-				<img src="assets/cola1.png">
-				<img src="assets/nike2.png">
-				<img src="assets/netflix1.png">
+				<img src="assets/cola1.png" alt="coca">
+				<img src="assets/nike2.png" alt="nike">
+				<img src="assets/netflix1.png" alt="netflix">
 			</div>
 		</section>
 		<section id="products">
@@ -101,9 +198,12 @@
 				<button class="category">🚗 Autos</button>
 				<button class="category">🤌 Políticos</button>
 			</div>
+
+
 			<div class="products-container">
+
 				<div class="product">
-					<img src="assets/nike1.png" alt="productxd">
+					<img class="golondrina" src="assets/nike1.png" alt="productxd">
 					<div class="product-info">
 						<div class="product-top">
 							<h3>Nike +</h3>
@@ -128,10 +228,8 @@
 					</div>
 				</div>
 
-
-			<div class="products-container">
 				<div class="product">
-					<img src="assets/atari1.png" alt="productxd">
+					<img class="golondrina" src="assets/atari1.png" alt="productxd">
 					<div class="product-info">
 						<div class="product-top">
 							<h3>Atari</h3>
@@ -152,14 +250,13 @@
 								</div>
 								<button class="btn-add">Add</button>
 							</div>
-							<p></p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="products-container">
+
+
 				<div class="product">
-					<img src="assets/st1.png" alt="productxd">
+					<img class="golondrina" src="assets/st1.png" alt="productxd">
 					<div class="product-info">
 						<div class="product-top">
 							<h3>Stranger Things</h3>
@@ -180,14 +277,12 @@
 								</div>
 								<button class="btn-add">Add</button>
 							</div>
-							<p></p>
 						</div>
 					</div>
 				</div>
-			</div>
+			
 
 
-			<div class="products-container">
 				<div class="product">
 					<img src="assets/vans1.png" alt="productxd">
 					<div class="product-info">
@@ -210,14 +305,12 @@
 								</div>
 								<button class="btn-add">Add</button>
 							</div>
-							<p></p>
 						</div>
 					</div>
 				</div>
-			</div>
+			
 
 
-			<div class="products-container">
 				<div class="product">
 					<img src="assets/japan1.png" alt="productxd">
 					<div class="product-info">
@@ -240,14 +333,12 @@
 								</div>
 								<button class="btn-add">Add</button>
 							</div>
-							<p></p>
 						</div>
 					</div>
 				</div>
-			</div>
+			
 
 
-			<div class="products-container">
 				<div class="product">
 					<img src="assets/bking1.png" alt="productxd">
 					<div class="product-info">
@@ -258,7 +349,7 @@
 						<div class="product-mid">
 							<div class="product-user">
 								<img src="assets/matarazzo.png" alt="algoxd">
-								<p>@Fideos_Matarazzo</p>
+								<p>@Fideos</p>
 							</div>
 							<span>2.09 ETH</span>
 						</div>
@@ -270,12 +361,10 @@
 								</div>
 								<button class="btn-add">Add</button>
 							</div>
-							<p></p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
 
 			<button class="btn-load">Ver más</button>
