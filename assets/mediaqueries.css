@@ -41,7 +41,7 @@
 		align-items: center;
 		gap: 30px;
 	}
-	.hero-info h2 {
+	.hero-info h1 {
 		width: 90%;
 		max-width: 500px;
 		min-width: unset;
