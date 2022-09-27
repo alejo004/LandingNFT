@@ -41,7 +41,7 @@
 		align-items: center;
 		gap: 30px;
 	}
-	.hero-info h1 {
+	.hero-info h2 {
 		width: 90%;
 		max-width: 500px;
 		min-width: unset;
@@ -111,12 +111,16 @@
 	#discover {
 		width: 80%;
 	}
+	.discover-info {
+		gap: 20px;
+	}
 	#discover h2 {
-		font-size: 45px;
-		width: 70%;
+		font-size: 35px;
+		width: 90%;
 	}
 	.discover-text {
 		font-size: 20px;
+		width: 80%;
 	}
 	.discover-cards {
 		gap: 20px;
